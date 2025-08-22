@@ -7,11 +7,13 @@ import { HiOutlineDotsHorizontal } from "react-icons/hi";
 
 
 
+
 // type tagItem = {
 //     backgroundColor: string;
 //     color: string;
 //     text: string;
 // }
+
 type tagItem = {
      date : string;
      time : string;
@@ -38,7 +40,8 @@ const StatusComponent:React.FC<statusListProps> = ({statusType , tagItems}) => {
  
     const count = tagItems.filter(item => item.StatusType === statusType.title).length;
 
-
+   const ThreeDot = HiOutlineDotsHorizontal  as unknown as React.FC;
+   const Plus = FaPlus  as unknown as React.FC;
     const {setNodeRef} =useDroppable({
        id : statusType.id
     })
@@ -55,8 +58,8 @@ const StatusComponent:React.FC<statusListProps> = ({statusType , tagItems}) => {
           </div>
 
           <div className="top-right">
-            <p><HiOutlineDotsHorizontal  color='gary'/></p>
-            <p><FaPlus color='gray' /></p>
+            <p><ThreeDot/></p>
+            <p><Plus/></p>
           </div>
       </div>
 

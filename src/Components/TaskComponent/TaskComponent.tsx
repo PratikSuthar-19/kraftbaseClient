@@ -21,6 +21,9 @@ type tagItem = {
 }
 
 const TaskComponent: React.FC<tagItem>= ({date , time , text , status , tag , rating ,id, StatusType }) => {
+   
+    const Verify = RiVerifiedBadgeFill  as unknown as React.FC;
+    const EditBtn = FaRegEdit  as unknown as React.FC;
 
     const tagdata = [
         {
@@ -77,7 +80,7 @@ const TaskComponent: React.FC<tagItem>= ({date , time , text , status , tag , ra
                  e.stopPropagation();
                  navigate(`edit/${id}`);
              }}>
-            <FaRegEdit  color='black'/>
+            <EditBtn/>
              </div>
       
 
@@ -102,7 +105,7 @@ const TaskComponent: React.FC<tagItem>= ({date , time , text , status , tag , ra
             </div>
 
               <div onClick={(e) =>  {e.preventDefault(); setVerifyColor("blue")}} style={{ cursor: "pointer" }}>
-                <RiVerifiedBadgeFill color={verifyColor} />
+                <Verify  />
               </div>
        </div>
 

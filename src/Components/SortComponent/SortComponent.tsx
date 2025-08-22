@@ -3,7 +3,7 @@ import './SortComponent.css';
 import { CgArrowsExchangeAltV } from "react-icons/cg";
 
 const SortComponent:React.FC = () => {
- 
+ const ExchangeIcon = CgArrowsExchangeAltV as unknown as React.FC;
   return (
   
     <div className='sort'>
@@ -12,7 +12,7 @@ const SortComponent:React.FC = () => {
     </div>
 
     <div>
-        <CgArrowsExchangeAltV />
+        <ExchangeIcon/>
     </div>
 
     </div> 
