@@ -10,6 +10,7 @@ type propType = {
 const QuickFilter:React.FC<propType>  = ({id , name}) => {
 
 
+const AddIcon = CgAdd as unknown as React.FC;
 
     const list = [
         {id : 1 ,
@@ -30,7 +31,7 @@ const QuickFilter:React.FC<propType>  = ({id , name}) => {
     ]
   return (
     < div className='quickFilter'>
-          <CgAdd/>
+         <AddIcon/>
           {name}   
     </div>
   )
