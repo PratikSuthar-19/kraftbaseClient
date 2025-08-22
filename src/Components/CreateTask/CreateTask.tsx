@@ -35,7 +35,7 @@ const Task: React.FC = () => {
     try { 
       
       const token = localStorage.getItem("token");
-       const response = await axios.post("http://localhost:4000/api/tasks",formData,{
+       const response = await axios.post("https://kraftbaseserver.onrender.com/api/tasks",formData,{
            headers: {
              Authorization: `Bearer ${token}`, 
             },

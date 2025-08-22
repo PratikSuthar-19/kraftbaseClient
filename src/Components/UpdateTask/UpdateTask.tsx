@@ -28,7 +28,7 @@ const UpdateTask: React.FC = () => {
         const token = localStorage.getItem("token");
         if (!token) return;
 
-        const response = await axios.get(`http://localhost:4000/api/tasks/${params?.id}`, {
+        const response = await axios.get(`https://kraftbaseserver.onrender.com/api/tasks/${params?.id}`, {
           headers: { Authorization: `Bearer ${token}` },
         });
 
@@ -62,7 +62,7 @@ const UpdateTask: React.FC = () => {
     try {
       const token = localStorage.getItem("token");
       const response = await axios.put(
-        `http://localhost:4000/api/tasks/${params.id}`,
+        `https://kraftbaseserver.onrender.com/api/tasks/${params.id}`,
         formData,
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -81,8 +81,8 @@ const UpdateTask: React.FC = () => {
   try {
     const token = localStorage.getItem("token");
     if (!token) return;
-    
-    await axios.delete(`http://localhost:4000/api/tasks/${params.id}`, {
+
+    await axios.delete(`https://kraftbaseserver.onrender.com/api/tasks/${params.id}`, {
       headers: { Authorization: `Bearer ${token}` },
     });
 

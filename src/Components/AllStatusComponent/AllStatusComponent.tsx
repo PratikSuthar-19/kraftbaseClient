@@ -43,7 +43,7 @@ const AllStatusComponent: React.FC = () => {
     }
     
     if(query.length > 0){
-       const response = await axios.get(`http://localhost:4000/api/tasks/search?query=${query}`, {
+       const response = await axios.get(`https://kraftbaseserver.onrender.com/api/tasks/search?query=${query}`, {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -54,7 +54,7 @@ const AllStatusComponent: React.FC = () => {
     }
     else{
 
-    const response = await axios.get("http://localhost:4000/api/tasks", {
+    const response = await axios.get("https://kraftbaseserver.onrender.com/api/tasks", {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -74,7 +74,7 @@ async function updateTaskStatus(taskId: string, newStatus: string) {
     const token = localStorage.getItem("token");
 
     const response = await axios.put(
-      `http://localhost:4000/api/tasks/${taskId}`,
+      `https://kraftbaseserver.onrender.com/api/tasks/${taskId}`,
       { StatusType: newStatus },
       {
         headers: {

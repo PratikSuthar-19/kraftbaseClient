@@ -14,7 +14,7 @@ const Login: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:4000/api/auth/login", {
+      const res = await axios.post("https://kraftbaseserver.onrender.com/api/auth/login", {
         email,
         password,
       });
