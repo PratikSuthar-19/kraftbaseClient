@@ -1,0 +1,27 @@
+.sort{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding: 7px;
+    border: 1px solid #ccc;
+    font-weight: 500;
+    font-size: 12px;
+    width: 4rem;
+    border-radius: 8px;
+}
+
+/* Tablet / mid screens */
+@media (max-width: 1024px) {
+  .sort {
+   display: none;
+  }
+
+ 
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .sort{
+    display: none;
+  }
+}

@@ -1,0 +1,29 @@
+.quickFilter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+     align-items: center;
+     padding: 7px;
+     gap: 5px;
+     border: 1px dashed #bab8b8;
+    font-weight: 500;
+    font-size: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Tablet / mid screens */
+@media (max-width: 1024px) {
+  .quickFilter {
+   display: none;
+  }
+
+ 
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .quickFilter {
+    display: none;
+  }
+}

@@ -1,0 +1,33 @@
+.statusComp{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 20rem;
+    flex-wrap: wrap; 
+}
+
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.top-left{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 10px;
+    color: rgb(96, 95, 95);
+}
+.top-right{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 10px;
+}
+.task-list{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+

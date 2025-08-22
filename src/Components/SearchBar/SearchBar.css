@@ -1,0 +1,17 @@
+.search-input {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* Remove blue border when focused */
+.search-input:focus {
+  outline: gray;
+  border-color: #ccc;
+  box-shadow: none;
+}
+/* .search-input:focus-visible {
+  outline: none !important;
+} */
